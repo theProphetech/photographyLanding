@@ -1,0 +1,109 @@
+#portfolio--sec {
+    padding: var(--padding);
+    /* border: 2px solid red; */
+}
+
+#portfolio--sec>div:nth-child(1) {
+    text-align: center;
+}
+
+#portfolio--sec h2 {
+    position: relative;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    letter-spacing: 7px;
+    color: var(--txt--clr2);
+    font-weight: 900;
+    width: max-content;
+    margin: 0 auto;
+    z-index: 3;
+
+}
+
+#portfolio--sec h2::before {
+    content: "";
+    position: absolute;
+    height: 45px;
+    width: 118px;
+    top: 5px;
+    left: 0;
+    transform: translate(-21px, 0px) skew(-10deg);
+    background: var(--mainClr);
+    z-index: -1;
+    border-radius: 5px 0 0 5px;
+}
+
+.top--con p {
+    margin-top: 2rem;
+    font-size: var(--secFontSize);
+    color: var(--paraClr)
+}
+
+.btm--con {
+    margin-top: 2rem;
+}
+
+.cat--con {
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+}
+
+.cats {
+    background: var(--backgroundClr);
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    border-radius: 5px;
+
+}
+
+
+
+.cats>li:nth-child(1)>a {
+    background-color: var(--mainClr);
+    color: #ffffff;
+}
+
+.cats>li a {
+    text-transform: capitalize;
+    color: var(--paraClr);
+    font-weight: 800;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.gallery--con {
+    margin-top: 4rem;
+}
+
+/* Implementation of grid properties */
+.gallery--subCon {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    gap: 1rem;
+    place-content: center;
+}
+
+[data-gridImage] {
+    position: relative;
+    height: 250px;
+    width: 300px;
+    display: block;
+    object-fit: cover;
+    filter: brightness(60%);
+    -webkit-filter: brightness(60%);
+    border-radius: 3px;
+    transform: scale(0.95);
+}
+
+[data-gridImage]:hover {
+    filter: brightness(100%);
+    transform: scale(1);
+    -webkit-filter: brightness(100%);
+    transition: filter 600ms linear, transform 300ms linear;
+
+}
