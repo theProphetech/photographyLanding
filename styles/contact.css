@@ -69,7 +69,7 @@
 
 .contact__rightcon {
   padding: 1rem;
-  align-self: top;
+  align-self: center;
 }
 .contact__rightcon > h3 {
   font-size: 1.7rem;
@@ -81,7 +81,9 @@
   margin-bottom: 1rem;
   text-transform: capitalize;
 }
-
+p.info__con{
+    line-height: 30px;
+}
 .socials__con {
   display: flex;
   gap: 1rem;
