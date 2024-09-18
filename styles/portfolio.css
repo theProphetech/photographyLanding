@@ -1,26 +1,12 @@
-#portfolio--sec {
-    padding: var(--padding);
-    /* border: 2px solid red; */
-}
+
 
 #portfolio--sec>div:nth-child(1) {
     text-align: center;
 }
 
-#portfolio--sec h2 {
-    position: relative;
-    font-size: 2.5rem;
-    text-transform: capitalize;
-    letter-spacing: 7px;
-    color: var(--txt--clr2);
-    font-weight: 900;
-    width: max-content;
-    margin: 0 auto;
-    z-index: 3;
 
-}
 
-#portfolio--sec h2::before {
+#portfolio--sec .top--con h2::before {
     content: "";
     position: absolute;
     height: 45px;

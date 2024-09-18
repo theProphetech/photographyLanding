@@ -2,7 +2,6 @@
     width: 100%;
     display: flex;
     align-items: center;
-    padding: var(--padding);
     background-color: var(--backgroundClr);
     position: relative;
     /* background: #000; */
@@ -120,7 +119,7 @@
     color: #fff;
     padding: 1.2rem 1rem;
     border-radius: 3px;
-    box-shadow: 10px 10px 15px 0 rgba(255, 255, 255, 0.2);
+    box-shadow: 10px 10px 15px 0 rgba(255, 255, 255, 0.1);
 }
 
 /* The input accordion trick below */
@@ -129,7 +128,7 @@ input[type="radio"]:checked~.author--details {
     min-height: 250px;
 }
 
-input[type="radio"]:checked+label {
+.tab--input:checked+label {
     padding: 1rem 1.2rem;
     font-size: 16px;
     /* border-bottom: 1px solid hsla(90, 85%, 48%, 1); */
