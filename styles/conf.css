@@ -34,6 +34,7 @@
 body {
   min-height: 100dvh;
   width: 100%;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -43,6 +44,7 @@ img {
 
 section {
   padding: var(--padding);
+  scroll-snap-type: y mandatory;
 }
 
 .top--con {
@@ -60,4 +62,10 @@ section {
   width: max-content;
   margin: 0 auto;
   z-index: 3;
+}
+
+@media screen and (max-width: 500px) {
+  section {
+    --padding: 2rem;
+  }
 }

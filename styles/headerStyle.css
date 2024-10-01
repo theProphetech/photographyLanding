@@ -3,154 +3,200 @@ This stylesheet is for the header and main(hero) section
 */
 
 header {
-    position: relative;
-    width: 100%;
-    height: 100dvh;
-    background: url(/assets/images/Fault\ Magazine\ Issue\ 25.jpg),
-     url(/assets/images/youngboy.jpg), url(/assets/images/photographer.jpg);
-    background-position: left, center, right;
-    background-repeat: no-repeat;
-    background-size: contain, auto, contain;
+  position: relative;
+  width: 100%;
+  height: 100dvh;
+  background: url(/assets/images/Fault\ Magazine\ Issue\ 25.jpg),
+    url(/assets/images/youngboy.jpg), url(/assets/images/photographer.jpg);
+  background-position: left, center, right;
+  background-repeat: no-repeat;
+  background-size: contain, auto, contain;
 }
 
 header::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.58);
-    
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.58);
 }
 
 header * {
-    isolation: isolate;
+  isolation: isolate;
 }
-
+.menu__hamburger {
+  display: none;
+}
 .logo--nav--con {
-    width: 100%;
-    padding: 0.5rem 10rem;
-    position: fixed;
-    z-index: 100;
-
+  width: 100%;
+  padding: 0.5rem 10rem;
+  position: fixed;
+  z-index: 100;
 }
 
 .logo--nav--subCon {
-    --nav__bg: hsla(230 , 90%, 5%, 1);
-    /* background-color: rgba(255, 255, 255, 0.3); */
-    background: var(--nav__bg);
-    width: 100%;
-    padding: 1.5rem 1.5rem;
-    display: flex;
-    align-items: center;
-    /* border: 2px solid green; */
-    justify-content: space-between;
-    border-radius: var(--border--radius);
+  --nav__bg: hsla(230, 90%, 5%, 1);
+  /* background-color: rgba(255, 255, 255, 0.3); */
+  background: var(--nav__bg);
+  width: 100%;
+  padding: 1.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  /* border: 2px solid green; */
+  justify-content: space-between;
+  border-radius: var(--border--radius);
 }
 
-.logo--nav--subCon>* {
-    line-height: 20px;
-    /* border: 2px solid red; */
+.logo--nav--subCon > * {
+  line-height: 20px;
+  /* border: 2px solid red; */
 }
 
 .logo {
-    --fontsz: 1.5rem;
-    font-size: var(--fontsz);
-    font-weight: 700;
-    text-transform: capitalize;
-    color: hsla(90, 85%, 58%, 1);
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  --fontsz: 1.5rem;
+  font-size: var(--fontsz);
+  font-weight: 700;
+  text-transform: capitalize;
+  color: hsla(90, 85%, 58%, 1);
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .nav--list {
-    display: inline-block;
-    margin-right: 1.5rem;
+  display: inline-block;
+  margin-right: 1.5rem;
 }
 
-.nav--list>a {
-    text-transform: capitalize;
-    color: var(--txt--clr);
-    font-weight: 600;
-    letter-spacing: 2px;
+.nav--list > a {
+  text-transform: capitalize;
+  color: var(--txt--clr);
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 .bookingsection--con {
-    text-transform: capitalize;
-    flex-basis: 20%;
-    text-align: center;
-
+  text-transform: capitalize;
+  flex-basis: 20%;
+  text-align: center;
 }
 
-.bookingsection--con>a {
-    width: max-content;
-    color: var(--txt--clr2);
-    line-height: 0;
-    display: inline-blocks;
-    background-color: var(--mainClr);
-    padding: 0.6rem 0.7rem;
-    border-radius: 2px;
+.bookingsection--con > a {
+  width: max-content;
+  color: var(--txt--clr2);
+  line-height: 0;
+  display: inline-blocks;
+  background-color: var(--mainClr);
+  padding: 0.6rem 0.7rem;
+  border-radius: 2px;
 }
-
-
 
 /* Hero styling */
 
 .hero--sec {
-    height: calc(100% - 81.5938px);
-    width: 100%;
-    /* border: 2px solid red; */
-
+  height: 100%;
+  width: 100%;
+  /* border: 2px solid red; */
 }
-
 .hero--info {
-    height: 100%;
-    display: grid;
-    place-content: center;
+  /* border: 2px solid red; */
+  height: inherit;
+  display: grid;
+  place-content: center;
 }
 
-.tagLine-con>h1 {
-    text-align: center;
-    font-size: 3rem;
-    letter-spacing: 1px;
-    font-weight: 600;
-    /* font-style: oblique; */
-    color: #ffffff;
+.tagLine-con > h1 {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  /* font-style: oblique; */
+  color: #ffffff;
 }
 
-.tagLine-con>h1>span {
-    font-size: 4rem;
-    color: var(--mainClr);
-
+.tagLine-con > h1 > span {
+  font-size: 4rem;
+  color: var(--mainClr);
 }
 
-.tagLine-con>p {
-    margin-top: 1.5rem;
-    color: #ffffff;
-    text-align: center;
-    padding: 0 25rem;
-    font-size: 16px;
-    line-height: 25px;
+.tagLine-con > p {
+  margin-top: 1.5rem;
+  color: #ffffff;
+  text-align: center;
+  padding: 0 25rem;
+  font-size: 16px;
+  line-height: 25px;
 }
 
 .heroBtn--con {
-    margin-top: 2.5rem;
-    justify-self: center;
-    border: none;
-    width: max-content;
-    border-radius: 3px;
-    box-shadow: 20px 10px 3px 0 rgba(255, 2555, 255, 0.2);
+  margin-top: 2.5rem;
+  justify-self: center;
+  border: none;
+  width: max-content;
+  border-radius: 3px;
+  box-shadow: 20px 10px 3px 0 rgba(255, 2555, 255, 0.2);
 }
 
-.heroBtn--con>a {
-    padding: 1rem 1.3rem;
+.heroBtn--con > a {
+  padding: 1rem 1.3rem;
+  display: block;
+  width: 100%;
+  background-color: var(--mainClr);
+  color: #ffffff;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+/* Working on the mobile section */
+
+@media screen and (max-width: 500px) {
+  header {
+    background: url("/assets/images/Fault\ Magazine\ Issue\ 25.jpg");
+
+    background-size: cover;
+    background-position: center center;
+    height: 80dvh;
+  }
+
+  .logo--nav--con {
+    padding: 1rem;
+  }
+
+  .menu--con li {
+    display: none;
+  }
+  .menu__hamburger {
     display: block;
-    width: 100%;
-    background-color: var(--mainClr);
-    color: #ffffff;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    border-radius: 3px;
-    font-weight: 500;
+    width: 40px;
+    height: 40px;
+  }
+
+  .bookingsection--con {
+    display: none;
+  }
+
+  .hero--info {
+  }
+  .tagLine-con {
+    padding: 0 1rem;
+    /* margin-top: 3rem; */
+  }
+  .tagLine-con > h1 {
+    padding: 0;
+
+    font-size: 2.5rem;
+  }
+  .tagLine-con > h1 > span {
+    font-size: 2.5rem;
+  }
+
+  .tagLine-con > p {
+    /* border: 2px solid red; */
+    padding: 0;
+    line-height: 30px;
+    font-size: 14px;
+  }
 }

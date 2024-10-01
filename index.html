@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/services.css" />
     <link rel="stylesheet" href="styles/testimonial.css" />
     <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
   </head>
   <body>
     <!-- Header and hero section=> start  -->
@@ -19,18 +20,33 @@
         <div class="logo--nav--subCon">
           <div class="logo">photography</div>
           <menu class="menu--con">
-            <li class="nav--list nav--list--1"><a href="#">Home</a></li>
-            <li class="nav--list nav--list--2"><a href="#">about</a></li>
-            <li class="nav--list nav--list--3"><a href="#">portfolio</a></li>
-            <li class="nav--list nav--list--4"><a href="#">testimonials</a></li>
-            <li class="nav--list nav--list--5"><a href="#">services</a></li>
-            <li class="nav--list nav--list--6"><a href="#">contact</a></li>
+            <!-- Mobile Hamburger => start -->
+            <img src="/assets/icon/hamburger-menu-svgrepo-com.svg" alt="" class="menu__hamburger" />
+            <!-- Mobile Hamburger => end -->
+            <li class="nav--list nav--list--1">
+              <a href="#header--sec">Home</a>
+            </li>
+            <li class="nav--list nav--list--2">
+              <a href="#abt--sec">about</a>
+            </li>
+            <li class="nav--list nav--list--3">
+              <a href="#portfolio--sec"> portfolio</a>
+            </li>
+            <li class="nav--list nav--list--4">
+              <a href="#testimonials__section">testimonials</a>
+            </li>
+            <li class="nav--list nav--list--5">
+              <a href="#services__section">services </a>
+            </li>
+            <li class="nav--list nav--list--6">
+              <a href="#contact__section">contact</a>
+            </li>
           </menu>
           <div class="bookingsection--con"><a href="#">book a session</a></div>
         </div>
       </div>
       <main class="hero--sec">
-        <div class="hero--info">
+        <div class="hero--info m--heroinfo">
           <div class="tagLine-con">
             <h1>
               Transforming <span>moments</span> into
@@ -142,18 +158,23 @@
             <li>
               <a href="#">all</a>
             </li>
+
             <li>
               <a href="#"> wedding </a>
             </li>
+
             <li>
               <a href="#">portraits</a>
             </li>
+
             <li>
               <a href="#">events</a>
             </li>
+
             <li>
               <a href="#">fashion</a>
             </li>
+            
             <li>
               <a href="#">product</a>
             </li>
@@ -231,7 +252,7 @@
 
     <!-- --------------------------- -->
     <!-- About section => start  -->
-    <section class="abt--sec">
+    <section id="abt--sec">
       <div class="abt--lc">
         <img
           src="/assets/images/owner2.jpg"
@@ -362,14 +383,6 @@
             </div>
           </div>
         </div>
-
-        <div class="scroll__indicator">
-          <a href="#scroll__1" class="indicator indicator__1"> </a>
-
-          <a href="#scroll__2" class="indicator indicator__1"></a>
-
-          <a href="#scroll__3" class="indicator indicator__1"></a>
-        </div>
       </div>
     </section>
     <!-- Testimonials section => end -->
@@ -436,6 +449,19 @@
     <!-- ---------------------------- -->
 
     <!-- Footer section => start  -->
+    <section id="footer__section">
+      <div class="ft__quick__links">
+        <ul>
+          <li>home</li>
+          <li>portfolio</li>
+          <li>contact</li>
+          <li>
+            <button class="ft__cta">Book a Section</button>
+          </li>
+        </ul>
+      </div>
+      <div id="ft__copyright">&copy; Copyright 2024. developed by Oluseyi</div>
+    </section>
     <!-- Footer section => end -->
   </body>
 </html>

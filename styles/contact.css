@@ -51,21 +51,18 @@
   font-weight: normal;
 }
 
-
-.textarea__con > textarea{
-    padding: 2rem;
-    width: 100%;
-    border: none;
+.textarea__con > textarea {
+  padding: 2rem;
+  width: 100%;
+  border: none;
 }
 
-.submit__btncon >button {
-    padding: 0.8rem 2rem;
-    background-color: transparent;
-    border: 3px solid var(--mainClr);
-    border-radius: var(--border--radius);
+.submit__btncon > button {
+  padding: 0.8rem 2rem;
+  background-color: transparent;
+  border: 3px solid var(--mainClr);
+  border-radius: var(--border--radius);
 }
-
-
 
 .contact__rightcon {
   padding: 1rem;
@@ -81,8 +78,8 @@
   margin-bottom: 1rem;
   text-transform: capitalize;
 }
-p.info__con{
-    line-height: 30px;
+p.info__con {
+  line-height: 30px;
 }
 .socials__con {
   display: flex;
@@ -98,4 +95,22 @@ p.info__con{
 .socials__con .social__fb {
   width: 27px;
   height: 27px;
+}
+
+@media screen and (max-width: 500px) {
+  .contact__btmcon {
+    flex-direction: column-reverse;
+  }
+
+  .contact__form{
+    width: 100%;
+    margin: 0;
+    /* border: 2px solid red; */
+  }
+
+  .input__con {
+  width: calc(100% - 10px);
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
 }
